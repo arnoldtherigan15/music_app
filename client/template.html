@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">  -->
+  <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+  <style>
+    * {
+      font-family: 'Alata';
+    }
+  </style>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color: #f5f4f8;">
+
+  <!-- login page -->
+  <section class="container d-none">
+    <div class="row justify-content-center mt-5">
+      <div class="col-4">
+        <div class="shadow-lg p-5 mb-5 bg-white rounded">
+          <div class="mb-5">
+            <img src="./assets/music.svg" alt="music" class="img-fluid">
+          </div>
+          <h5 class="mb-4"><b>Login</b></h5>
+          <form>
+            <div class="form-group">
+              <label for="login-email">Email address</label>
+              <input type="email" class="form-control" id="login-email" placeholder="Your email">
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" class="form-control" id="login-password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- home page -->
+  <section class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-4">
+        <img src="./assets/music2.svg" alt="music" class="img-fluid mt-5">
+      </div>
+      <div class="col-6">
+        <h4>
+          <b>Your Music</b>
+          <button type="button" class="btn btn-primary float-right btn-sm">Add Music</button>
+        </h4>
+        <ul class="list-unstyled">
+          <li class="media bg-white rounded p-2 shadow mt-3">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg" class="mr-3 rounded" alt="cover" width="100">
+            <div class="media-body p-1">
+              <button type="button" class="close float-right" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <a href="#" class="badge badge-warning text-uppercase" style="letter-spacing: 1px;">Pop</a>
+              <a href="google.com" class="text-decoration-none" target="_blank">
+                <h5 class="mt-0 mb-0">Beautiful People</h5>
+              </a>
+              <span class="text-muted">Ed Sheeran</span> 
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- add music form -->
+  <section class="container d-none">
+    <div class="row justify-content-center mt-5">
+      <div class="col-4">
+        <div class="mb-5 mt-5">
+          <img src="./assets/music3.svg" alt="music" class="img-fluid mt-5">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="shadow-lg p-5 mb-5 bg-white rounded">
+          <h5 class="mb-4"><b>Add Music</b></h5>
+          <form>
+            <div class="form-group">
+              <label for="add-title">Title</label>
+              <input type="text" class="form-control" id="add-title">
+            </div>
+            <div class="form-group">
+              <label for="add-artist">Artist</label>
+              <input type="text" class="form-control" id="add-artist">
+            </div>
+            <div class="form-group">
+              <label for="add-genre">Genre</label>
+              <select class="form-control" id="add-genre">
+                <option selected disabled>Select Genre</option>
+                <option>Electronic Dance Music</option>
+                <option>Rock</option>
+                <option>Jazz</option>
+                <option>Dubstep</option>
+                <option>Rhythm and Blues</option>
+                <option>Techno</option>
+                <option>Country</option>
+                <option>Indie</option>
+                <option>Pop</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="add-image">Image Url</label>
+              <input type="text" class="form-control" id="add-image">
+            </div>
+            <div class="form-group">
+              <label for="add-preview">Preview Url</label>
+              <input type="text" class="form-control" id="add-preview">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- search music -->
+  <section class="container d-none">
+    <div class="row justify-content-center mt-5">
+      <div class="col-5">
+        <h5><b>Search Song</b></h5>
+        <form class="form-row">
+          <div class="form-group col-md-9">
+            <input type="text" class="form-control" id="search-keyword" placeholder="keyword">
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </form>
+        <ul class="list-unstyled">
+          <li class="media bg-white rounded p-2 shadow mt-3">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg" class="mr-3 rounded" alt="cover" width="100">
+            <div class="media-body p-1">
+              <button type="button" class="close float-right" aria-label="Close">
+                <span aria-hidden="true">add</span>
+              </button>
+              <a href="#" class="badge badge-warning text-uppercase" style="letter-spacing: 1px;">Pop</a>
+              <h5 class="mt-0 mb-0">Beautiful People</h5>
+              <span class="text-muted">Ed Sheeran</span> 
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

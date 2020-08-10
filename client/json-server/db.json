@@ -1,0 +1,22 @@
+{
+  "songs": [
+      {
+          "id": 1,
+          "title": "Menunggu Kepastian",
+          "artist": "Aldien",
+          "genre": "metal",
+          "preview": "https://cdns-preview-4.dzcdn.net/stream/c-458c03d68160eb2e846e070183d40377-1.mp3",
+          "image": "https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/69751/optimized_large_thumb_stage.jpg",
+          "userId": 1
+      },
+      {
+          "id": 2,
+          "title": "Kegalauan yg Haqiqi",
+          "artist": "Shanty",
+          "genre": "indie",
+          "preview": "https://cdns-preview-d.dzcdn.net/stream/c-d5151331cbb6d27c8870c8dd37e8195a-2.mp3",
+          "image": "https://marketplace.canva.com/EADaoIbXy3s/1/0/1600w/canva-colorful-abstract-album-cover-1esJb0A6G44.jpg",
+          "userId": 1
+      }
+  ]
+}
